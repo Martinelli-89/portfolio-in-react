@@ -1,9 +1,14 @@
-import './App.css';
+import './styles/styles.css';
+import Header from "./components/Header";
+import Card from "./components/Card";
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      Portfolio
+      <Header />
+      <Card />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: $titles;
+    font-size: $small;
+    color: $dark;
+    height: 10vh;
+    width: 80vw;
+    margin-top: 4vh;
+}

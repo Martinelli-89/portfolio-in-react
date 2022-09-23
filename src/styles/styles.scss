@@ -1,0 +1,25 @@
+@use "./colors" as *;
+@use "./header" as *;
+@use "./card" as *;
+@use "./footer" as *;
+@use "./aboutMe" as *;
+@use "./circles" as *;
+
+.App {
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: $light;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,15 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+
+.header {
+    font-family: $signature;
+    font-size: $medium;
+
+    display: flex;
+    justify-content: center;
+
+    .header__title {
+        padding-top: 1vh;
+        color: $dark;
+    }
+}
