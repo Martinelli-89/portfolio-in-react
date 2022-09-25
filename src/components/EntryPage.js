@@ -10,7 +10,7 @@ const EntryPage = () => {
     }
 
 
-    if(seePortfolio == false) {
+    if(seePortfolio === false) {
 
         return (
             <div>
