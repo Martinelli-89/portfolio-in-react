@@ -1,0 +1,172 @@
+@use "./colors" as *;
+@use "./fonts" as *;
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+    font-family: $titles;
+    font-size: 2rem;
+}
+
+.line {
+    border-bottom: 1px solid $medium;
+}
+
+.about-me {
+    align-self: flex-start;
+    margin-left: 10vw;
+    color:$dark;
+    width:30vw;
+}
+
+.projects {
+    color: $dark;
+    width:30vw;
+}
+
+.get-in-touch {
+    align-self: flex-end;
+    margin-right: 4vw;
+    width:43vw;
+    color: $dark;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+ }
+
+//About me animation  
+
+.about-me__letter1 {
+    animation: appear 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.about-me__letter2 {
+    animation: appear 1s 2s;
+    animation-fill-mode: forwards;
+}
+.about-me__letter3 {
+    animation: appear 1s 3s;
+    animation-fill-mode: forwards;
+}
+.about-me__letter4 {
+    animation: appear 1s 4s;
+    animation-fill-mode: forwards;
+}
+.about-me__letter5 {
+    animation: appear 1s 5s;
+    animation-fill-mode: forwards;
+}
+.about-me__letter6 {
+    animation: appear 1s 6s;
+    animation-fill-mode: forwards;
+}
+.about-me__letter7 {
+    animation: appear 1s 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        color: $dark;
+    }
+
+    100% {
+        color: $medium;
+    }
+}
+
+//Projects animation
+
+.projects__letter1 {
+    animation: appearProjects 1.5s 1s;
+    animation-fill-mode: forwards;
+}
+
+.projects__letter2 {
+    animation: appearProjects 1.83s 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.projects__letter3 {
+    animation: appearProjects 1.83s 4.33s;
+    animation-fill-mode: forwards;
+}
+
+.projects__letter4 {
+    animation: appearProjects 1.84s 6.16s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearProjects {
+    0% {
+        color: $dark;
+    }
+
+    100% {
+        color: $medium;
+    }
+}
+
+//get in touch animation
+
+.get-in-touch__letter10 {
+    animation: appearGetInTouch 0.8s 1s;
+    animation-fill-mode: forwards;
+}
+
+.get-in-touch__letter9 {
+    animation: appearGetInTouch 0.8s 1.8s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter8 {
+    animation: appearGetInTouch 0.8s 2.6s;
+    animation-fill-mode: forwards;
+}
+
+.get-in-touch__letter7 {
+    animation: appearGetInTouch 0.8s 3.4s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter6 {
+    animation: appearGetInTouch 0.8s 4.2s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter5 {
+    animation: appearGetInTouch 0.8s 5s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter4 {
+    animation: appearGetInTouch 0.8s 5.8s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter3 {
+    animation: appearGetInTouch 0.8s 6.6s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter2 {
+    animation: appearGetInTouch 0.8s 7.4s;
+    animation-fill-mode: forwards;
+}
+.get-in-touch__letter1 {
+    animation: appearGetInTouch 0.8s 8.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes appearGetInTouch {
+    0% {
+        color: $dark;
+    }
+
+    100% {
+        color: $medium;
+    }
+}

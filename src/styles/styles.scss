@@ -1,25 +1,16 @@
 @use "./colors" as *;
-@use "./header" as *;
-@use "./card" as *;
-@use "./footer" as *;
-@use "./aboutMe" as *;
-@use "./circles" as *;
 
-.App {
-
-    margin: 0px;
-    padding: 0px;
-
-    background-color: $light;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
-}
+@use "./portfolio-aboutMe" as *;
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: $dark;
+    width: 100vw;
+    height:100vh;
+    color:$medium;
 }

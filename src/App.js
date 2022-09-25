@@ -1,16 +1,14 @@
 import './styles/styles.css';
-import Header from "./components/Header";
-import Card from "./components/Card";
-import Footer from './components/Footer';
+import EntryPage from './components/EntryPage';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Card />
-      <Footer />
+      <EntryPage />
     </div>
   );
 }
 
 export default App;
+
