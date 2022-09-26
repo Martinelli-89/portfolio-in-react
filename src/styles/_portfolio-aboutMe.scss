@@ -46,32 +46,32 @@ p {
 //About me animation  
 
 .about-me__letter1 {
-    animation: appear 1s 1s;
+    animation: appear 0.8s 1s;
     animation-fill-mode: forwards;
 }
 
 .about-me__letter2 {
-    animation: appear 1s 2s;
+    animation: appear 0.8s 1.8s;
     animation-fill-mode: forwards;
 }
 .about-me__letter3 {
-    animation: appear 1s 3s;
+    animation: appear 0.8s 2.6s;
     animation-fill-mode: forwards;
 }
 .about-me__letter4 {
-    animation: appear 1s 4s;
+    animation: appear 0.8s 3.4s;
     animation-fill-mode: forwards;
 }
 .about-me__letter5 {
-    animation: appear 1s 5s;
+    animation: appear 0.8s 4.2s;
     animation-fill-mode: forwards;
 }
 .about-me__letter6 {
-    animation: appear 1s 6s;
+    animation: appear 0.8s 5s;
     animation-fill-mode: forwards;
 }
 .about-me__letter7 {
-    animation: appear 1s 7s;
+    animation: appear 0.8s 5.8s;
     animation-fill-mode: forwards;
 }
 
@@ -88,22 +88,22 @@ p {
 //Projects animation
 
 .projects__letter1 {
-    animation: appearProjects 1.5s 1s;
+    animation: appearProjects 1.4s 1s;
     animation-fill-mode: forwards;
 }
 
 .projects__letter2 {
-    animation: appearProjects 1.83s 2.5s;
+    animation: appearProjects 1.4s 2.4s;
     animation-fill-mode: forwards;
 }
 
 .projects__letter3 {
-    animation: appearProjects 1.83s 4.33s;
+    animation: appearProjects 1.4s 3.8s;
     animation-fill-mode: forwards;
 }
 
 .projects__letter4 {
-    animation: appearProjects 1.84s 6.16s;
+    animation: appearProjects 1.4s 5.2s;
     animation-fill-mode: forwards;
 }
 
@@ -120,45 +120,45 @@ p {
 //get in touch animation
 
 .get-in-touch__letter10 {
-    animation: appearGetInTouch 0.8s 1s;
+    animation: appearGetInTouch 0.5s 1s;
     animation-fill-mode: forwards;
 }
 
 .get-in-touch__letter9 {
-    animation: appearGetInTouch 0.8s 1.8s;
+    animation: appearGetInTouch 0.5s 1.5s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter8 {
-    animation: appearGetInTouch 0.8s 2.6s;
+    animation: appearGetInTouch 0.5s 2s;
     animation-fill-mode: forwards;
 }
 
 .get-in-touch__letter7 {
-    animation: appearGetInTouch 0.8s 3.4s;
+    animation: appearGetInTouch 0.5s 2.5s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter6 {
-    animation: appearGetInTouch 0.8s 4.2s;
+    animation: appearGetInTouch 0.5s 3s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter5 {
-    animation: appearGetInTouch 0.8s 5s;
+    animation: appearGetInTouch 0.5s 3.5s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter4 {
-    animation: appearGetInTouch 0.8s 5.8s;
+    animation: appearGetInTouch 0.5s 4s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter3 {
-    animation: appearGetInTouch 0.8s 6.6s;
+    animation: appearGetInTouch 0.5s 4.5s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter2 {
-    animation: appearGetInTouch 0.8s 7.4s;
+    animation: appearGetInTouch 0.5s 5s;
     animation-fill-mode: forwards;
 }
 .get-in-touch__letter1 {
-    animation: appearGetInTouch 0.8s 8.2s;
+    animation: appearGetInTouch 0.5s 5.5s;
     animation-fill-mode: forwards;
 }
 @keyframes appearGetInTouch {
