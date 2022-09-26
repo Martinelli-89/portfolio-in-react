@@ -16,22 +16,23 @@ span {
 }
 
 .line {
-    border-bottom: 1px solid $medium;
+    animation: darker 5.5s 3s;
+    animation-fill-mode: forwards;
 }
 
-.about-me {
+.intro__about-me {
     align-self: flex-start;
-    margin-left: 10vw;
+    margin-left: 5vw;
     color:$dark;
-    width:30vw;
+    width:35vw;
 }
 
-.projects {
+.intro__projects {
     color: $dark;
     width:30vw;
 }
 
-.get-in-touch {
+.intro__get-in-touch {
     align-self: flex-end;
     margin-right: 4vw;
     width:43vw;
@@ -45,32 +46,32 @@ p {
 
 //About me animation  
 
-.about-me__letter1 {
+.intro__about-me--letter1 {
     animation: appear 0.8s 1s;
     animation-fill-mode: forwards;
 }
 
-.about-me__letter2 {
+.intro__about-me--letter2 {
     animation: appear 0.8s 1.8s;
     animation-fill-mode: forwards;
 }
-.about-me__letter3 {
+.intro__about-me--letter3 {
     animation: appear 0.8s 2.6s;
     animation-fill-mode: forwards;
 }
-.about-me__letter4 {
+.intro__about-me--letter4 {
     animation: appear 0.8s 3.4s;
     animation-fill-mode: forwards;
 }
-.about-me__letter5 {
+.intro__about-me--letter5 {
     animation: appear 0.8s 4.2s;
     animation-fill-mode: forwards;
 }
-.about-me__letter6 {
+.intro__about-me--letter6 {
     animation: appear 0.8s 5s;
     animation-fill-mode: forwards;
 }
-.about-me__letter7 {
+.intro__about-me--letter7 {
     animation: appear 0.8s 5.8s;
     animation-fill-mode: forwards;
 }
@@ -87,22 +88,22 @@ p {
 
 //Projects animation
 
-.projects__letter1 {
+.intro__projects--letter1 {
     animation: appearProjects 1.4s 1s;
     animation-fill-mode: forwards;
 }
 
-.projects__letter2 {
+.intro__projects--letter2 {
     animation: appearProjects 1.4s 2.4s;
     animation-fill-mode: forwards;
 }
 
-.projects__letter3 {
+.intro__projects--letter3 {
     animation: appearProjects 1.4s 3.8s;
     animation-fill-mode: forwards;
 }
 
-.projects__letter4 {
+.intro__projects--letter4 {
     animation: appearProjects 1.4s 5.2s;
     animation-fill-mode: forwards;
 }
@@ -119,45 +120,45 @@ p {
 
 //get in touch animation
 
-.get-in-touch__letter10 {
+.intro__get-in-touch--letter10 {
     animation: appearGetInTouch 0.5s 1s;
     animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter9 {
+.intro__get-in-touch--letter9 {
     animation: appearGetInTouch 0.5s 1.5s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter8 {
+.intro__get-in-touch--letter8 {
     animation: appearGetInTouch 0.5s 2s;
     animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter7 {
+.intro__get-in-touch--letter7 {
     animation: appearGetInTouch 0.5s 2.5s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter6 {
+.intro__get-in-touch--letter6 {
     animation: appearGetInTouch 0.5s 3s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter5 {
+.intro__get-in-touch--letter5 {
     animation: appearGetInTouch 0.5s 3.5s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter4 {
+.intro__get-in-touch--letter4 {
     animation: appearGetInTouch 0.5s 4s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter3 {
+.intro__get-in-touch--letter3 {
     animation: appearGetInTouch 0.5s 4.5s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter2 {
+.intro__get-in-touch--letter2 {
     animation: appearGetInTouch 0.5s 5s;
     animation-fill-mode: forwards;
 }
-.get-in-touch__letter1 {
+.intro__get-in-touch--letter1 {
     animation: appearGetInTouch 0.5s 5.5s;
     animation-fill-mode: forwards;
 }
@@ -168,5 +169,16 @@ p {
 
     100% {
         color: $medium;
+    }
+}
+
+//Line animation
+
+@keyframes darker {
+    from {
+        border-bottom: 1px solid $dark;
+    }
+    to {
+        border-bottom: 1px solid $medium;
     }
 }

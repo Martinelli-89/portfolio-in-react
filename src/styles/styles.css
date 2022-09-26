@@ -14,22 +14,25 @@ span {
 }
 
 .line {
-  border-bottom: 1px solid #ECE0CC;
+  -webkit-animation: darker 5.5s 3s;
+          animation: darker 5.5s 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.about-me {
+.intro__about-me {
   align-self: flex-start;
-  margin-left: 10vw;
+  margin-left: 5vw;
+  color: #165663;
+  width: 35vw;
+}
+
+.intro__projects {
   color: #165663;
   width: 30vw;
 }
 
-.projects {
-  color: #165663;
-  width: 30vw;
-}
-
-.get-in-touch {
+.intro__get-in-touch {
   align-self: flex-end;
   margin-right: 4vw;
   width: 43vw;
@@ -41,49 +44,49 @@ p {
   justify-content: center;
 }
 
-.about-me__letter1 {
+.intro__about-me--letter1 {
   -webkit-animation: appear 0.8s 1s;
           animation: appear 0.8s 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter2 {
+.intro__about-me--letter2 {
   -webkit-animation: appear 0.8s 1.8s;
           animation: appear 0.8s 1.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter3 {
+.intro__about-me--letter3 {
   -webkit-animation: appear 0.8s 2.6s;
           animation: appear 0.8s 2.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter4 {
+.intro__about-me--letter4 {
   -webkit-animation: appear 0.8s 3.4s;
           animation: appear 0.8s 3.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter5 {
+.intro__about-me--letter5 {
   -webkit-animation: appear 0.8s 4.2s;
           animation: appear 0.8s 4.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter6 {
+.intro__about-me--letter6 {
   -webkit-animation: appear 0.8s 5s;
           animation: appear 0.8s 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.about-me__letter7 {
+.intro__about-me--letter7 {
   -webkit-animation: appear 0.8s 5.8s;
           animation: appear 0.8s 5.8s;
   -webkit-animation-fill-mode: forwards;
@@ -107,28 +110,28 @@ p {
     color: #ECE0CC;
   }
 }
-.projects__letter1 {
+.intro__projects--letter1 {
   -webkit-animation: appearProjects 1.4s 1s;
           animation: appearProjects 1.4s 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.projects__letter2 {
+.intro__projects--letter2 {
   -webkit-animation: appearProjects 1.4s 2.4s;
           animation: appearProjects 1.4s 2.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.projects__letter3 {
+.intro__projects--letter3 {
   -webkit-animation: appearProjects 1.4s 3.8s;
           animation: appearProjects 1.4s 3.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.projects__letter4 {
+.intro__projects--letter4 {
   -webkit-animation: appearProjects 1.4s 5.2s;
           animation: appearProjects 1.4s 5.2s;
   -webkit-animation-fill-mode: forwards;
@@ -152,70 +155,70 @@ p {
     color: #ECE0CC;
   }
 }
-.get-in-touch__letter10 {
+.intro__get-in-touch--letter10 {
   -webkit-animation: appearGetInTouch 0.5s 1s;
           animation: appearGetInTouch 0.5s 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter9 {
+.intro__get-in-touch--letter9 {
   -webkit-animation: appearGetInTouch 0.5s 1.5s;
           animation: appearGetInTouch 0.5s 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter8 {
+.intro__get-in-touch--letter8 {
   -webkit-animation: appearGetInTouch 0.5s 2s;
           animation: appearGetInTouch 0.5s 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter7 {
+.intro__get-in-touch--letter7 {
   -webkit-animation: appearGetInTouch 0.5s 2.5s;
           animation: appearGetInTouch 0.5s 2.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter6 {
+.intro__get-in-touch--letter6 {
   -webkit-animation: appearGetInTouch 0.5s 3s;
           animation: appearGetInTouch 0.5s 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter5 {
+.intro__get-in-touch--letter5 {
   -webkit-animation: appearGetInTouch 0.5s 3.5s;
           animation: appearGetInTouch 0.5s 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter4 {
+.intro__get-in-touch--letter4 {
   -webkit-animation: appearGetInTouch 0.5s 4s;
           animation: appearGetInTouch 0.5s 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter3 {
+.intro__get-in-touch--letter3 {
   -webkit-animation: appearGetInTouch 0.5s 4.5s;
           animation: appearGetInTouch 0.5s 4.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter2 {
+.intro__get-in-touch--letter2 {
   -webkit-animation: appearGetInTouch 0.5s 5s;
           animation: appearGetInTouch 0.5s 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.get-in-touch__letter1 {
+.intro__get-in-touch--letter1 {
   -webkit-animation: appearGetInTouch 0.5s 5.5s;
           animation: appearGetInTouch 0.5s 5.5s;
   -webkit-animation-fill-mode: forwards;
@@ -237,6 +240,22 @@ p {
   }
   100% {
     color: #ECE0CC;
+  }
+}
+@-webkit-keyframes darker {
+  from {
+    border-bottom: 1px solid #165663;
+  }
+  to {
+    border-bottom: 1px solid #ECE0CC;
+  }
+}
+@keyframes darker {
+  from {
+    border-bottom: 1px solid #165663;
+  }
+  to {
+    border-bottom: 1px solid #ECE0CC;
   }
 }
 * {
