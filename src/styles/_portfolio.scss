@@ -1,184 +1,180 @@
 @use "./colors" as *;
 @use "./fonts" as *;
 
-main {
-    width: 100vw;
-    height: 100vh;
+.portfolio {
+
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-span {
-    font-family: $titles;
-    font-size: 2rem;
-}
-
-.line {
-    animation: darker 5.5s 3s;
-    animation-fill-mode: forwards;
-}
-
-.intro__about-me {
-    align-self: flex-start;
-    margin-left: 5vw;
-    color:$dark;
-    width:35vw;
-}
-
-.intro__projects {
-    color: $dark;
-    width:30vw;
-}
-
-.intro__get-in-touch {
-    align-self: flex-end;
-    margin-right: 4vw;
-    width:43vw;
-    color: $dark;
-}
-
-p {
-    display: flex;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
- }
+    align-items: center;
+    border: 2px solid red;
 
-//About me animation  
 
-.intro__about-me--letter1 {
-    animation: appear 0.8s 1s;
-    animation-fill-mode: forwards;
+    nav {
+
+        justify-content: flex-start;
+
+    }
+
+    .container {
+
+        background-color: $mediumLight;
+        width: 95%;
+        height: 95%;
+
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        border: 1px solid red;
+        
+
+
+        .card {
+            background-color: $mediumLight;
+            border-radius: 5px;
+            border:2px solid $dark;
+        }
+
+        .container__projects {
+            grid-column-start: 2;
+            grid-column-end: 8;
+            grid-row-start: 5;
+            grid-row-end:13;
+        }
+
+        .container__aboutMe {
+            grid-column-start: 10;
+            grid-column-end: 17;
+            grid-row-start: 10;
+            grid-row-end:15;
+        }
+
+        .container__something {
+            grid-column-start: 15;
+            grid-column-end: 21;
+            grid-row-start: 4;
+            grid-row-end:8;
+        }
+
+        .singleLetter {
+            grid-row: 2 / 3;
+            color:$dark;
+            font-family: $titles;
+            font-size: 3rem;
+            align-self: center;
+            justify-self:center;
+        }
+
+        .container__title1 {
+            grid-column: 3 / 4;
+        }
+
+        .container__title2 {
+            grid-column: 4 / 5;
+        }
+
+        .container__title3 {
+            grid-column: 5 / 6;
+        }
+
+        .container__title4 {
+            grid-column: 6 / 7;
+        }
+
+        .container__title5 {
+            grid-column: 7 / 8;
+        }
+
+        .container__title6 {
+            grid-column: 8 / 9;
+        }
+
+        .container__title7 {
+            grid-column: 9 / 10;
+        }
+
+        .container__title8 {
+            grid-column: 10 / 11;
+        }
+
+        .container__title9 {
+            grid-column: 12 / 13;
+        }
+
+        .container__title10 {
+            grid-column: 13 / 14;
+        }
+
+        .container__title11 {
+            grid-column: 14 / 15;
+        }
+
+        .container__title12 {
+            grid-column: 15 / 16;
+        }
+
+        .container__title13 {
+            grid-column: 16 / 17;
+        }
+
+        .container__title14 {
+            grid-column: 17 / 18;
+        }
+
+        .container__title15 {
+            grid-column: 18 / 19;
+        }
+
+        .container__title16 {
+            grid-column: 19 / 20;
+        }
+
+        .container__title17 {
+            grid-column: 20 / 21;
+        }
+
+        //Animation
+
+        .ball {
+            background-color: $dark;
+            border-radius: 50%;
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            height: 50%;
+            width: 50%;
+            justify-self: center;
+            animation: ballAnimation 3s forwards ease-in;
+            
+        }
+
+    }
+
 }
 
-.intro__about-me--letter2 {
-    animation: appear 0.8s 1.8s;
-    animation-fill-mode: forwards;
-}
-.intro__about-me--letter3 {
-    animation: appear 0.8s 2.6s;
-    animation-fill-mode: forwards;
-}
-.intro__about-me--letter4 {
-    animation: appear 0.8s 3.4s;
-    animation-fill-mode: forwards;
-}
-.intro__about-me--letter5 {
-    animation: appear 0.8s 4.2s;
-    animation-fill-mode: forwards;
-}
-.intro__about-me--letter6 {
-    animation: appear 0.8s 5s;
-    animation-fill-mode: forwards;
-}
-.intro__about-me--letter7 {
-    animation: appear 0.8s 5.8s;
-    animation-fill-mode: forwards;
-}
 
-@keyframes appear {
+
+@keyframes ballAnimation {
+
     0% {
-        color: $dark;
+        transform: translate(0%,0%);
+        height: 50%;
+        width: 50%;
     }
-
+    80% {
+        transform: translate(0%, 700%);
+        height: 46%;
+        width: 54%;
+    }
+    90% {
+        transform: translate(0%, 700%);
+        height: 48%;
+        width: 52%;
+    }
     100% {
-        color: $medium;
-    }
-}
-
-//Projects animation
-
-.intro__projects--letter1 {
-    animation: appearProjects 1.4s 1s;
-    animation-fill-mode: forwards;
-}
-
-.intro__projects--letter2 {
-    animation: appearProjects 1.4s 2.4s;
-    animation-fill-mode: forwards;
-}
-
-.intro__projects--letter3 {
-    animation: appearProjects 1.4s 3.8s;
-    animation-fill-mode: forwards;
-}
-
-.intro__projects--letter4 {
-    animation: appearProjects 1.4s 5.2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes appearProjects {
-    0% {
-        color: $dark;
-    }
-
-    100% {
-        color: $medium;
-    }
-}
-
-//get in touch animation
-
-.intro__get-in-touch--letter10 {
-    animation: appearGetInTouch 0.5s 1s;
-    animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter9 {
-    animation: appearGetInTouch 0.5s 1.5s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter8 {
-    animation: appearGetInTouch 0.5s 2s;
-    animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter7 {
-    animation: appearGetInTouch 0.5s 2.5s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter6 {
-    animation: appearGetInTouch 0.5s 3s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter5 {
-    animation: appearGetInTouch 0.5s 3.5s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter4 {
-    animation: appearGetInTouch 0.5s 4s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter3 {
-    animation: appearGetInTouch 0.5s 4.5s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter2 {
-    animation: appearGetInTouch 0.5s 5s;
-    animation-fill-mode: forwards;
-}
-.intro__get-in-touch--letter1 {
-    animation: appearGetInTouch 0.5s 5.5s;
-    animation-fill-mode: forwards;
-}
-@keyframes appearGetInTouch {
-    0% {
-        color: $dark;
-    }
-
-    100% {
-        color: $medium;
-    }
-}
-
-//Line animation
-
-@keyframes darker {
-    from {
-        border-bottom: 1px solid $dark;
-    }
-    to {
-        border-bottom: 1px solid $medium;
+        transform: translate(0%, 700%);
+        height: 50%;
+        width: 50%;
     }
 }

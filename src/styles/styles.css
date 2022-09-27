@@ -1,261 +1,163 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
-main {
-  width: 100vw;
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
+.portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-span {
-  font-family: "Merriweather", serif;
-  font-size: 2rem;
-}
-
-.line {
-  -webkit-animation: darker 5.5s 3s;
-          animation: darker 5.5s 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me {
-  align-self: flex-start;
-  margin-left: 5vw;
-  color: #165663;
-  width: 35vw;
-}
-
-.intro__projects {
-  color: #165663;
-  width: 30vw;
-}
-
-.intro__get-in-touch {
-  align-self: flex-end;
-  margin-right: 4vw;
-  width: 43vw;
-  color: #165663;
-}
-
-p {
-  display: flex;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+.portfolio nav {
+  justify-content: flex-start;
+}
+.portfolio .container {
+  background-color: #ECE0CC;
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  border: 1px solid red;
+}
+.portfolio .container .card {
+  background-color: #ECE0CC;
+  border-radius: 5px;
+  border: 2px solid #165663;
+}
+.portfolio .container .container__projects {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 13;
+}
+.portfolio .container .container__aboutMe {
+  grid-column-start: 10;
+  grid-column-end: 17;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+.portfolio .container .container__something {
+  grid-column-start: 15;
+  grid-column-end: 21;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+.portfolio .container .singleLetter {
+  grid-row: 2/3;
+  color: #165663;
+  font-family: "Zilla Slab", serif;
+  font-size: 3rem;
+  align-self: center;
+  justify-self: center;
+}
+.portfolio .container .container__title1 {
+  grid-column: 3/4;
+}
+.portfolio .container .container__title2 {
+  grid-column: 4/5;
+}
+.portfolio .container .container__title3 {
+  grid-column: 5/6;
+}
+.portfolio .container .container__title4 {
+  grid-column: 6/7;
+}
+.portfolio .container .container__title5 {
+  grid-column: 7/8;
+}
+.portfolio .container .container__title6 {
+  grid-column: 8/9;
+}
+.portfolio .container .container__title7 {
+  grid-column: 9/10;
+}
+.portfolio .container .container__title8 {
+  grid-column: 10/11;
+}
+.portfolio .container .container__title9 {
+  grid-column: 12/13;
+}
+.portfolio .container .container__title10 {
+  grid-column: 13/14;
+}
+.portfolio .container .container__title11 {
+  grid-column: 14/15;
+}
+.portfolio .container .container__title12 {
+  grid-column: 15/16;
+}
+.portfolio .container .container__title13 {
+  grid-column: 16/17;
+}
+.portfolio .container .container__title14 {
+  grid-column: 17/18;
+}
+.portfolio .container .container__title15 {
+  grid-column: 18/19;
+}
+.portfolio .container .container__title16 {
+  grid-column: 19/20;
+}
+.portfolio .container .container__title17 {
+  grid-column: 20/21;
+}
+.portfolio .container .ball {
+  background-color: #165663;
+  border-radius: 50%;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  height: 50%;
+  width: 50%;
+  justify-self: center;
+  -webkit-animation: ballAnimation 3s forwards ease-in;
+          animation: ballAnimation 3s forwards ease-in;
 }
 
-.intro__about-me--letter1 {
-  -webkit-animation: appear 0.8s 1s;
-          animation: appear 0.8s 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter2 {
-  -webkit-animation: appear 0.8s 1.8s;
-          animation: appear 0.8s 1.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter3 {
-  -webkit-animation: appear 0.8s 2.6s;
-          animation: appear 0.8s 2.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter4 {
-  -webkit-animation: appear 0.8s 3.4s;
-          animation: appear 0.8s 3.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter5 {
-  -webkit-animation: appear 0.8s 4.2s;
-          animation: appear 0.8s 4.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter6 {
-  -webkit-animation: appear 0.8s 5s;
-          animation: appear 0.8s 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__about-me--letter7 {
-  -webkit-animation: appear 0.8s 5.8s;
-          animation: appear 0.8s 5.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes appear {
+@-webkit-keyframes ballAnimation {
   0% {
-    color: #165663;
+    transform: translate(0%, 0%);
+    height: 50%;
+    width: 50%;
+  }
+  80% {
+    transform: translate(0%, 700%);
+    height: 46%;
+    width: 54%;
+  }
+  90% {
+    transform: translate(0%, 700%);
+    height: 48%;
+    width: 52%;
   }
   100% {
-    color: #ECE0CC;
+    transform: translate(0%, 700%);
+    height: 50%;
+    width: 50%;
   }
 }
 
-@keyframes appear {
+@keyframes ballAnimation {
   0% {
-    color: #165663;
+    transform: translate(0%, 0%);
+    height: 50%;
+    width: 50%;
+  }
+  80% {
+    transform: translate(0%, 700%);
+    height: 46%;
+    width: 54%;
+  }
+  90% {
+    transform: translate(0%, 700%);
+    height: 48%;
+    width: 52%;
   }
   100% {
-    color: #ECE0CC;
-  }
-}
-.intro__projects--letter1 {
-  -webkit-animation: appearProjects 1.4s 1s;
-          animation: appearProjects 1.4s 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__projects--letter2 {
-  -webkit-animation: appearProjects 1.4s 2.4s;
-          animation: appearProjects 1.4s 2.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__projects--letter3 {
-  -webkit-animation: appearProjects 1.4s 3.8s;
-          animation: appearProjects 1.4s 3.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__projects--letter4 {
-  -webkit-animation: appearProjects 1.4s 5.2s;
-          animation: appearProjects 1.4s 5.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes appearProjects {
-  0% {
-    color: #165663;
-  }
-  100% {
-    color: #ECE0CC;
-  }
-}
-
-@keyframes appearProjects {
-  0% {
-    color: #165663;
-  }
-  100% {
-    color: #ECE0CC;
-  }
-}
-.intro__get-in-touch--letter10 {
-  -webkit-animation: appearGetInTouch 0.5s 1s;
-          animation: appearGetInTouch 0.5s 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter9 {
-  -webkit-animation: appearGetInTouch 0.5s 1.5s;
-          animation: appearGetInTouch 0.5s 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter8 {
-  -webkit-animation: appearGetInTouch 0.5s 2s;
-          animation: appearGetInTouch 0.5s 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter7 {
-  -webkit-animation: appearGetInTouch 0.5s 2.5s;
-          animation: appearGetInTouch 0.5s 2.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter6 {
-  -webkit-animation: appearGetInTouch 0.5s 3s;
-          animation: appearGetInTouch 0.5s 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter5 {
-  -webkit-animation: appearGetInTouch 0.5s 3.5s;
-          animation: appearGetInTouch 0.5s 3.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter4 {
-  -webkit-animation: appearGetInTouch 0.5s 4s;
-          animation: appearGetInTouch 0.5s 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter3 {
-  -webkit-animation: appearGetInTouch 0.5s 4.5s;
-          animation: appearGetInTouch 0.5s 4.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter2 {
-  -webkit-animation: appearGetInTouch 0.5s 5s;
-          animation: appearGetInTouch 0.5s 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.intro__get-in-touch--letter1 {
-  -webkit-animation: appearGetInTouch 0.5s 5.5s;
-          animation: appearGetInTouch 0.5s 5.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes appearGetInTouch {
-  0% {
-    color: #165663;
-  }
-  100% {
-    color: #ECE0CC;
-  }
-}
-
-@keyframes appearGetInTouch {
-  0% {
-    color: #165663;
-  }
-  100% {
-    color: #ECE0CC;
-  }
-}
-@-webkit-keyframes darker {
-  from {
-    border-bottom: 1px solid #165663;
-  }
-  to {
-    border-bottom: 1px solid #ECE0CC;
-  }
-}
-@keyframes darker {
-  from {
-    border-bottom: 1px solid #165663;
-  }
-  to {
-    border-bottom: 1px solid #ECE0CC;
+    transform: translate(0%, 700%);
+    height: 50%;
+    width: 50%;
   }
 }
 * {
@@ -265,8 +167,7 @@ p {
 }
 
 .App {
-  background-color: #165663;
+  background-color: #ECE0CC;
   width: 100vw;
   height: 100vh;
-  color: #ECE0CC;
 }/*# sourceMappingURL=styles.css.map */

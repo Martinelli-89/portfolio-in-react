@@ -3,7 +3,7 @@ import Portfolio from './Portfolio';
 
 const EntryPage = () => {
 
-    const [seePortfolio, updateSeePortfolio] = useState(false);
+    const [seePortfolio, updateSeePortfolio] = useState(true);
 
     const handleClick = () => {
         updateSeePortfolio(!seePortfolio);
