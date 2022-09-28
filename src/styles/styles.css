@@ -103,61 +103,131 @@
 .portfolio .container .container__title17 {
   grid-column: 20/21;
 }
-.portfolio .container .ball {
+.portfolio .container .para {
+  -webkit-animation: ballAnimation 9s linear forwards;
+          animation: ballAnimation 9s linear forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.portfolio .container .para .ball {
   background-color: #165663;
   border-radius: 50%;
-  grid-row: 1/2;
-  grid-column: 2/3;
   height: 50%;
   width: 50%;
   justify-self: center;
-  -webkit-animation: ballAnimation 3s forwards ease-in;
-          animation: ballAnimation 3s forwards ease-in;
+}
+.portfolio .container .para .parachute {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .container .para .parachute .parachuteCanopy {
+  background-color: #165663;
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateY(20%);
+  -webkit-animation: hideParachute 1s ease-in-out forwards;
+          animation: hideParachute 1s ease-in-out forwards;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+.portfolio .container .para .parachute .parachuteCanopy .parachuteCanopy__bit {
+  background-color: #39abc2;
+  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+  height: 30%;
+  width: 49%;
+  transform: translateY(20%);
+  -webkit-animation: hideParachute 1s ease-in-out forwards;
+          animation: hideParachute 1s ease-in-out forwards;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+.portfolio .container .para .parachute .parachuteStrings {
+  height: 50%;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.portfolio .container .para .parachute .parachuteStrings .parachuteString__1, .portfolio .container .para .parachute .parachuteStrings .parachuteString__2, .portfolio .container .para .parachute .parachuteStrings .parachuteString__3 {
+  width: 1.8px;
+  height: 150%;
+  background-color: #165663;
+  transform: translateY(20%);
+  -webkit-animation: hideParachute 1s ease-in-out forwards;
+          animation: hideParachute 1s ease-in-out forwards;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+.portfolio .container .para .parachute .parachuteStrings .parachuteString__1 {
+  transform: rotate(-47deg) translate(-10px);
+}
+.portfolio .container .para .parachute .parachuteStrings .parachuteString__3 {
+  transform: rotate(47deg) translate(10px);
 }
 
 @-webkit-keyframes ballAnimation {
   0% {
-    transform: translate(0%, 0%);
-    height: 50%;
-    width: 50%;
+    transform: rotate(40deg) translate(0, -100%);
   }
-  80% {
-    transform: translate(0%, 700%);
-    height: 46%;
-    width: 54%;
+  30% {
+    transform: rotate(-20deg) translate(10%, 50%);
+  }
+  60% {
+    transform: rotate(20deg) translate(20%, 200%);
   }
   90% {
-    transform: translate(0%, 700%);
-    height: 48%;
-    width: 52%;
+    transform: rotate(-5deg) translate(30%, 280%);
   }
   100% {
-    transform: translate(0%, 700%);
-    height: 50%;
-    width: 50%;
+    transform: rotate(0deg) translate(10%, 300%);
   }
 }
 
 @keyframes ballAnimation {
   0% {
-    transform: translate(0%, 0%);
-    height: 50%;
-    width: 50%;
+    transform: rotate(40deg) translate(0, -100%);
   }
-  80% {
-    transform: translate(0%, 700%);
-    height: 46%;
-    width: 54%;
+  30% {
+    transform: rotate(-20deg) translate(10%, 50%);
+  }
+  60% {
+    transform: rotate(20deg) translate(20%, 200%);
   }
   90% {
-    transform: translate(0%, 700%);
-    height: 48%;
-    width: 52%;
+    transform: rotate(-5deg) translate(30%, 280%);
   }
   100% {
-    transform: translate(0%, 700%);
-    height: 50%;
-    width: 50%;
+    transform: rotate(0deg) translate(10%, 300%);
+  }
+}
+@-webkit-keyframes hideParachute {
+  0% {
+    background-color: #165663;
+  }
+  100% {
+    background-color: #ECE0CC;
+  }
+}
+@keyframes hideParachute {
+  0% {
+    background-color: #165663;
+  }
+  100% {
+    background-color: #ECE0CC;
   }
 }
 * {

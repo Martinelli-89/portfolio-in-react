@@ -15,7 +15,25 @@ const Portfolio = () => {
         <main className="portfolio">
             <nav>Nav goes here</nav>
             <section className="container">
-                <div className="ball"></div>
+                <div className="para">
+                    <div className="parachute">
+                        <div className="parachuteCanopy">
+                            <div className="parachuteCanopy__bit">
+                            </div>
+                            <div className="parachuteCanopy__bit">
+                            </div>
+                        </div>
+                        <div className="parachuteStrings">
+                            <div className="parachuteString__1">
+                            </div>
+                            <div className="parachuteString__2">
+                            </div>
+                            <div className="parachuteString__3">
+                            </div>    
+                        </div>
+                    </div>
+                    <div className="ball"></div>
+                </div>
                 <div className="container__title1 singleLetter">S</div>
                 <div className="container__title2 singleLetter">O</div>
                 <div className="container__title3 singleLetter">F</div>
