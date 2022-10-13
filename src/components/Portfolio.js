@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import AboutMe from "./AboutMe";
+import cannon from "../Resources/cannon.svg";
 
 const Portfolio = () => {
 
@@ -34,6 +35,7 @@ const Portfolio = () => {
                     </div>
                     <div className="ball"></div>
                 </div>
+
                 <div className="container__title1 singleLetter">S</div>
                 <div className="container__title2 singleLetter">O</div>
                 <div className="container__title3 singleLetter">F</div>
@@ -51,6 +53,13 @@ const Portfolio = () => {
                 <div className="container__title15 singleLetter">P</div>
                 <div className="container__title16 singleLetter">E</div>
                 <div className="container__title17 singleLetter">R</div>
+                <div className="container__title18 secondRaw">T</div>
+                <div className="container__title19 secondRaw">O</div>
+                <div className="container__title20 secondRaw">B</div>
+                <div className="container__title21 secondRaw">E</div>
+                <div className="cannon">
+                    <img src={cannon} alt="cannon"></img>
+                </div>
                 <div className="container__projects card">Projects</div>
                 <div className="container__aboutMe card">About me</div>
                 <div className="container__something card">Something</div>
