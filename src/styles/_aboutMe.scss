@@ -1,0 +1,25 @@
+@use "./colors" as *;
+@use "./fonts" as *;
+
+.aboutMe {
+
+    display: flex;
+    flex-direction: column;
+    
+
+    .aboutMe__name {
+
+        color: $dark;
+        align-self: flex-end;
+        font-size: 3rem;
+        font-family: $titles;
+    }
+
+    .aboutMe__description {
+        color: $fonts;
+        font-size: 1.15rem;
+        text-align:justify;
+        font-family: $text;
+    }
+
+}

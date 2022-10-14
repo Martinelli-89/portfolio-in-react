@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap");
+/*
+$light: #FAF9EE;
+$mediumLight: #ECE0CC;
+$lightdark: #d8c00b;
+$ligthBlue: #39abc2;
+$dark: #165663;
+
+
+$dark: #DDc6b6;
+$mediumLight: #262223;
+*/
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -7,48 +19,46 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 .portfolio nav {
   justify-content: flex-start;
 }
 .portfolio .container {
-  background-color: #ECE0CC;
+  background-color: #262223;
   width: 95%;
   height: 95%;
   display: grid;
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(15, 1fr);
-  border: 1px solid red;
 }
-.portfolio .container .card {
-  background-color: #ECE0CC;
+.portfolio .container .mainCard {
+  background-color: #262223;
   border-radius: 5px;
-  border: 2px solid #165663;
+  border: 2px solid #af67a3;
 }
 .portfolio .container .container__projects {
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-column-end: 8;
   grid-row-start: 5;
-  grid-row-end: 13;
+  grid-row-end: 14;
 }
 .portfolio .container .container__aboutMe {
-  grid-column-start: 10;
-  grid-column-end: 17;
-  grid-row-start: 10;
-  grid-row-end: 15;
-}
-.portfolio .container .container__something {
-  grid-column-start: 15;
+  grid-column-start: 14;
   grid-column-end: 21;
   grid-row-start: 4;
   grid-row-end: 8;
 }
+.portfolio .container .container__something {
+  grid-column-start: 11;
+  grid-column-end: 16;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
 .portfolio .container .singleLetter {
-  grid-row: 1/2;
-  color: #165663;
+  grid-row: 2/3;
+  color: #DDc6b6;
   font-family: "Zilla Slab", serif;
-  font-size: 3rem;
+  font-size: 4rem;
   align-self: center;
   justify-self: center;
 }
@@ -103,184 +113,47 @@
 .portfolio .container .container__title17 {
   grid-column: 20/21;
 }
-.portfolio .container .secondRaw {
-  grid-row: 3/4;
-  color: #165663;
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.projects__wrapper .card {
+  width: 30%;
+  aspect-ratio: 1/1;
+  background-color: #af67a3;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+
+.projects__title {
+  color: #DDc6b6;
+  text-align: center;
+  margin-top: 2%;
   font-family: "Zilla Slab", serif;
+  font-size: 2rem;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe .aboutMe__name {
+  color: #af67a3;
+  align-self: flex-end;
   font-size: 3rem;
-  align-self: center;
-  justify-self: center;
+  font-family: "Zilla Slab", serif;
 }
-.portfolio .container .container__title18 {
-  grid-column: 9/10;
-}
-.portfolio .container .container__title19 {
-  grid-column: 10/11;
-}
-.portfolio .container .container__title20 {
-  grid-column: 12/13;
-}
-.portfolio .container .container__title21 {
-  grid-column: 13/14;
-}
-.portfolio .container .cannon {
-  grid-column: 6/7;
-  grid-row: 4/5;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.portfolio .container .cannon img {
-  width: 80%;
-  height: 80%;
-  align-self: end;
-  transform: translate(-70%, 12%);
-}
-.portfolio .container .para {
-  -webkit-animation: ballAnimation 9s linear forwards;
-          animation: ballAnimation 9s linear forwards;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.portfolio .container .para .ball {
-  background-color: #165663;
-  border-radius: 50%;
-  height: 65%;
-  width: 40%;
-  justify-self: center;
-  -webkit-animation: roll 3s 10.5s ease forwards;
-          animation: roll 3s 10.5s ease forwards;
-}
-.portfolio .container .para .parachute {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.portfolio .container .para .parachute .parachuteCanopy {
-  background-color: #165663;
-  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transform: translateY(20%);
-  -webkit-animation: hideParachute 1s linear forwards;
-          animation: hideParachute 1s linear forwards;
-  -webkit-animation-delay: 8.8s;
-          animation-delay: 8.8s;
-}
-.portfolio .container .para .parachute .parachuteCanopy .parachuteCanopy__bit {
-  background-color: #39abc2;
-  border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
-  height: 30%;
-  width: 49%;
-  transform: translateY(20%);
-  -webkit-animation: hideParachute 1s linear forwards;
-          animation: hideParachute 1s linear forwards;
-  -webkit-animation-delay: 8.8s;
-          animation-delay: 8.8s;
-}
-.portfolio .container .para .parachute .parachuteStrings {
-  height: 50%;
-  width: 100%;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-}
-.portfolio .container .para .parachute .parachuteStrings .parachuteString__1, .portfolio .container .para .parachute .parachuteStrings .parachuteString__2, .portfolio .container .para .parachute .parachuteStrings .parachuteString__3 {
-  width: 1.8px;
-  height: 150%;
-  background-color: #165663;
-  transform: translateY(20%);
-  -webkit-animation: hideParachute 1s ease-in-out forwards;
-          animation: hideParachute 1s ease-in-out forwards;
-  -webkit-animation-delay: 8.8s;
-          animation-delay: 8.8s;
-}
-.portfolio .container .para .parachute .parachuteStrings .parachuteString__1 {
-  transform: rotate(-47deg) translate(-10px);
-}
-.portfolio .container .para .parachute .parachuteStrings .parachuteString__3 {
-  transform: rotate(47deg) translate(10px);
+.aboutMe .aboutMe__description {
+  color: #DDc6b6;
+  font-size: 1.15rem;
+  text-align: justify;
+  font-family: "Arsenal", sans-serif;
 }
 
-@-webkit-keyframes ballAnimation {
-  0% {
-    transform: rotate(40deg) translate(0, -100%);
-  }
-  30% {
-    transform: rotate(-20deg) translate(10%, 50%);
-  }
-  60% {
-    transform: rotate(20deg) translate(20%, 200%);
-  }
-  90% {
-    transform: rotate(-5deg) translate(30%, 280%);
-  }
-  100% {
-    transform: rotate(0deg) translate(10%, 325%);
-  }
-}
-
-@keyframes ballAnimation {
-  0% {
-    transform: rotate(40deg) translate(0, -100%);
-  }
-  30% {
-    transform: rotate(-20deg) translate(10%, 50%);
-  }
-  60% {
-    transform: rotate(20deg) translate(20%, 200%);
-  }
-  90% {
-    transform: rotate(-5deg) translate(30%, 280%);
-  }
-  100% {
-    transform: rotate(0deg) translate(10%, 325%);
-  }
-}
-@-webkit-keyframes hideParachute {
-  0% {
-    background-color: #165663;
-  }
-  100% {
-    background-color: #ECE0CC;
-  }
-}
-@keyframes hideParachute {
-  0% {
-    background-color: #165663;
-  }
-  100% {
-    background-color: #ECE0CC;
-  }
-}
-@-webkit-keyframes roll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(680%);
-  }
-}
-@keyframes roll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(680%);
-  }
-}
 * {
   margin: 0px;
   padding: 0px;
@@ -288,7 +161,7 @@
 }
 
 .App {
-  background-color: #ECE0CC;
+  background-color: #262223;
   width: 100vw;
   height: 100vh;
 }/*# sourceMappingURL=styles.css.map */

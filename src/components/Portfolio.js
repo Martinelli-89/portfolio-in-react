@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import AboutMe from "./AboutMe";
-import cannon from "../Resources/cannon.svg";
+import Projects from "./Projects";
 
 const Portfolio = () => {
 
@@ -16,26 +16,6 @@ const Portfolio = () => {
         <main className="portfolio">
             <nav>Nav goes here</nav>
             <section className="container">
-                <div className="para">
-                    <div className="parachute">
-                        <div className="parachuteCanopy">
-                            <div className="parachuteCanopy__bit">
-                            </div>
-                            <div className="parachuteCanopy__bit">
-                            </div>
-                        </div>
-                        <div className="parachuteStrings">
-                            <div className="parachuteString__1">
-                            </div>
-                            <div className="parachuteString__2">
-                            </div>
-                            <div className="parachuteString__3">
-                            </div>    
-                        </div>
-                    </div>
-                    <div className="ball"></div>
-                </div>
-
                 <div className="container__title1 singleLetter">S</div>
                 <div className="container__title2 singleLetter">O</div>
                 <div className="container__title3 singleLetter">F</div>
@@ -53,16 +33,13 @@ const Portfolio = () => {
                 <div className="container__title15 singleLetter">P</div>
                 <div className="container__title16 singleLetter">E</div>
                 <div className="container__title17 singleLetter">R</div>
-                <div className="container__title18 secondRaw">T</div>
-                <div className="container__title19 secondRaw">O</div>
-                <div className="container__title20 secondRaw">B</div>
-                <div className="container__title21 secondRaw">E</div>
-                <div className="cannon">
-                    <img src={cannon} alt="cannon"></img>
+                <div className="container__projects">
+                    <Projects />
                 </div>
-                <div className="container__projects card">Projects</div>
-                <div className="container__aboutMe card">About me</div>
-                <div className="container__something card">Something</div>
+                <div className="container__aboutMe">
+                    <AboutMe />
+                </div>
+                <div className="container__something mainCard">Something</div>
             </section>
         </main>
 
