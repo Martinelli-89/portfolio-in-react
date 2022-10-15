@@ -1,0 +1,20 @@
+@use "./colors" as *;
+
+.cardBack {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    color: $fonts;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+    }
+
+}

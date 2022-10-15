@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Portfolio from './Portfolio';
 
-const EntryPage = () => {
+const EntryPage = (props) => {
 
     const [seePortfolio, updateSeePortfolio] = useState(true);
 
@@ -21,7 +21,7 @@ const EntryPage = () => {
     } else {
         return (
             <div>
-                <Portfolio />
+                <Portfolio projects={props.projectsArray}/>
             </div>
         );
     }

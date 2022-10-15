@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
 
     //Declaring useState variables
     const [aboutMe, updateAboutMe] = useState(false);
@@ -34,7 +34,7 @@ const Portfolio = () => {
                 <div className="container__title16 singleLetter">E</div>
                 <div className="container__title17 singleLetter">R</div>
                 <div className="container__projects">
-                    <Projects />
+                    <Projects projects={props.projects}/>
                 </div>
                 <div className="container__aboutMe">
                     <AboutMe />

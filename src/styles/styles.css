@@ -53,10 +53,10 @@ $mediumLight: #262223;
   grid-row-end: 8;
 }
 .portfolio .container .container__something {
-  grid-column-start: 11;
-  grid-column-end: 16;
-  grid-row-start: 10;
-  grid-row-end: 15;
+  grid-column-start: 10;
+  grid-column-end: 15;
+  grid-row-start: 11;
+  grid-row-end: 16;
 }
 .portfolio .container .singleLetter {
   grid-row: 2/3;
@@ -167,6 +167,23 @@ $mediumLight: #262223;
 }
 .aboutMe .aboutMe__description .value {
   color: rgb(132, 207, 86);
+}
+
+.cardBack {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  color: #DDc6b6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.cardBack img {
+  width: 50%;
+  aspect-ratio: 1/1;
 }
 
 * {

@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86" width="86" height="86">
+	<title>BlackKnight-svg</title>
+	<defs>
+		<image width="86" height="86" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQMAAABvmPO0AAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAARSURBVHicY2AYBaNgFIx0AAAECAAB5UCkGAAAAABJRU5ErkJggg=="/>
+		<image  width="86" height="86" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWAQMAAABvmPO0AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA3ca2n5R53QAAAAJ0Uk5TAP9bkSK1AAAA4klEQVR4nMXSOw7DIAwGYKIMGblBOQoXqwRHy1E4AiMDimsXv6J2bpm+SODfDoTw4/Vwzt6nczOnbo7T+TIf4G2FMlghgCHcAfRwBIAqUWg5XNBdj+rhjXxpGVySClpo+dTywF2kt7vz4C5pTY2VAG8AC3Pe2FXbufvUdj4d7x7F3JxrNgfzVB84RlE39YadyO8JT/zU/4/t2R35u/N3mmx7yO4NlGamMscqRWkhiWnf8n7xPoqaFF2Xh0XHbtHkzM8sYlThNiKWkNcUK0bwBJHK1K8T+Nfqp0luAu54OfxxvQD3l/NBcZThSwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	<use id="img2" href="#img2" x="0" y="0"/>
+</svg>
