@@ -4,49 +4,24 @@ import React, {useState} from "react";
 
 const Card = (props) => {
 
-  const [front, turnFront] = useState(true);
-  const [ticTacToe, toggleTicTacToe] = useState(false);
-
-  const flipCard = () => {
-    turnFront(!front);
-  }
-
-  const startEndGame = () => {
-    toggleTicTacToe(!ticTacToe);
-  }
-
-  const handleClickFront = event => {
-    flipCard();
-  }
+  const [flip, toggleFlip] = useState(false);
 
 
-  if (front == true &&  ticTacToe == false) {
-
-    return (
-      <div className="card" onClick={handleClickFront}>
-      </div>
-      
+  return (
+    <div className="projectCard">
+      <button
+          className={flip ? 'card is-flipped' : 'card'}
+          onClick={() => toggleFlip(!flip)}
+        >
+        <div className="card__face card__face--front">
+        </div>
+        <div  className="card__face card__face--back">
+        <img src={require(`../Resources/Images/${props.imgSource}`)}></img>
+        {props.project ? <p>{props.project}</p> : ""}
+        </div>
+        </button>
+    </div>
     )
-
-  } else if(front == true &&  ticTacToe == true) {
-
-    return (
-      <div className="card">
-        X
-      </div>
-      
-    )
-
-  } else {
-
-    return (
-      <div className="cardBack">
-          <img src={require(`../Resources/Images/${props.imgSource}`)}></img>
-          <p>{props.project}</p>
-      </div>
-      
-    )
-  }
 }
 
 export default Card;

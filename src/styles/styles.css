@@ -124,14 +124,6 @@ $mediumLight: #262223;
   justify-content: space-evenly;
   align-items: center;
 }
-.projects__wrapper .card {
-  width: 30%;
-  aspect-ratio: 1/1;
-  background-color: #af67a3;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  border-radius: 10px;
-}
 
 .projects__title {
   color: #DDc6b6;
@@ -169,21 +161,56 @@ $mediumLight: #262223;
   color: rgb(132, 207, 86);
 }
 
-.cardBack {
+.projectCard {
   width: 30%;
   aspect-ratio: 1/1;
-  border-radius: 10px;
-  color: #DDc6b6;
+  perspective: 600px;
+  border-radius: 15px;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+.projectCard .card {
+  padding: 0;
+  background-color: #262223;
+  border: none;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transition: transform 1s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.projectCard .card__face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #af67a3;
+  border-radius: 15px;
+}
+.projectCard .card__face--back {
+  transform: rotateY(180deg);
+  background-color: #262223;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   text-align: center;
 }
-.cardBack img {
-  width: 50%;
-  aspect-ratio: 1/1;
+.projectCard .card__face--back img {
+  width: 60%;
+}
+.projectCard .card__face--back p {
+  color: #DDc6b6;
+}
+.projectCard .card.is-flipped {
+  transform: rotateY(-180deg);
 }
 
 * {

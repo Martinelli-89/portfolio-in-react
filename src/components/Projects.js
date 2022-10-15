@@ -7,11 +7,19 @@ const Projects = (props) => {
         <section className="projects">
             <div className="projects__wrapper">
                 {props.projects.map ( (project, index) => {
-                    return (
-                        <Card project={project.projName} 
-                                imgSource={project.imgSource} 
-                                key = {index}/>
-                    );
+                    if(project.name != "Easter egg") {
+                        return (
+                            <Card project={project.projName} 
+                                    imgSource={project.imgSource} 
+                                    key = {index}/>
+                        );
+                        } else {
+                            return (
+                                <Card project={project.projName} 
+                                        imgSource={project.imgSource} 
+                                        key = {index}/>
+                            );
+                        }
                 })
                 }
             </div>

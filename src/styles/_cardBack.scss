@@ -1,20 +1,59 @@
 @use "./colors" as *;
 
-.cardBack {
+.projectCard {
+
     width: 30%;
     aspect-ratio: 1 / 1;
-    border-radius: 10px;
-    color: $fonts;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    perspective: 600px;
+    border-radius: 15px;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
 
-    img {
-        width: 50%;
+    .card {
+        padding: 0;
+        background-color: $mediumLight;
+        border:none;
+        width: 100%;
         aspect-ratio: 1 / 1;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        transition: transform 1s cubic-bezier(0.45, 0, 0.55, 1);
     }
 
+    .card__face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        background-color: $dark;
+        border-radius: 15px;
+    }
+    
+    .card__face--back {
+        transform:rotateY(180deg);
+        background-color: $mediumLight;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+
+        img {
+            width: 60%;
+        }
+
+        p {
+            color: $fonts;
+        }
+      }
+      
+      .card.is-flipped {
+        transform:rotateY(-180deg);
+      }
 }
