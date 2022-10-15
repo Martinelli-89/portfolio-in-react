@@ -1,25 +1,40 @@
 @use "./colors" as *;
 @use "./fonts" as *;
 
+
 .aboutMe {
 
     display: flex;
     flex-direction: column;
+    font-family: "FiraCode-Light";
     
 
     .aboutMe__name {
 
         color: $dark;
-        align-self: flex-end;
-        font-size: 3rem;
-        font-family: $titles;
+        font-size: 2.3rem;
+
+        .punctuation {
+            color: rgb(95, 219, 219);
+        }
     }
 
     .aboutMe__description {
         color: $fonts;
-        font-size: 1.15rem;
-        text-align:justify;
-        font-family: $text;
+        font-size: 1.1rem;
+        margin-left: 3vw;
+        text-align: justify;
+        .punctuation {
+            color: rgb(95, 219, 219);
+        }
+
+        .key {
+            color: rgb(38, 208, 166);
+        }
+
+        .value {
+            color: rgb(132, 207, 86);
+        }
     }
 
 }

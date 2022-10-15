@@ -12,6 +12,10 @@ $dark: #165663;
 $dark: #DDc6b6;
 $mediumLight: #262223;
 */
+@font-face {
+  font-family: "FiraCode-Light";
+  src: url(../Resources/FiraCode-Light.ttf);
+}
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -133,25 +137,36 @@ $mediumLight: #262223;
   color: #DDc6b6;
   text-align: center;
   margin-top: 2%;
-  font-family: "Zilla Slab", serif;
+  font-family: "FiraCode-Light";
   font-size: 2rem;
 }
 
 .aboutMe {
   display: flex;
   flex-direction: column;
+  font-family: "FiraCode-Light";
 }
 .aboutMe .aboutMe__name {
   color: #af67a3;
-  align-self: flex-end;
-  font-size: 3rem;
-  font-family: "Zilla Slab", serif;
+  font-size: 2.3rem;
+}
+.aboutMe .aboutMe__name .punctuation {
+  color: rgb(95, 219, 219);
 }
 .aboutMe .aboutMe__description {
   color: #DDc6b6;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  margin-left: 3vw;
   text-align: justify;
-  font-family: "Arsenal", sans-serif;
+}
+.aboutMe .aboutMe__description .punctuation {
+  color: rgb(95, 219, 219);
+}
+.aboutMe .aboutMe__description .key {
+  color: rgb(38, 208, 166);
+}
+.aboutMe .aboutMe__description .value {
+  color: rgb(132, 207, 86);
 }
 
 * {
