@@ -3,6 +3,12 @@ import Card from "../reusable-elements/card";
 
 const Projects = (props) => {
 
+    const [keyLastCardFlipped, toggleKeyLastCardFlipped] = useState();
+
+    const updateFlipCard = (value) => {
+        toggleKeyLastCardFlipped(value);
+    }
+
     return (
         <section className="projects">
             <div className="projects__wrapper">
@@ -11,13 +17,19 @@ const Projects = (props) => {
                         return (
                             <Card project={project.projName} 
                                     imgSource={project.imgSource} 
-                                    key = {index}/>
+                                    key = {index}
+                                    cardId = {index}
+                                    keyLastCardFlipped={keyLastCardFlipped}
+                                    toggleKeyLastCardFlipped={updateFlipCard}/>
                         );
                         } else {
                             return (
                                 <Card project={project.projName} 
                                         imgSource={project.imgSource} 
-                                        key = {index}/>
+                                        key = {index}
+                                        cardId = {index}
+                                        keyLastCardFlipped={keyLastCardFlipped}
+                                        toggleKeyLastCardFlipped={toggleKeyLastCardFlipped}/>
                             );
                         }
                 })
