@@ -202,6 +202,7 @@ $mediumLight: #262223;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  border: 2px solid #af67a3;
 }
 .projectCard .card__face--back img {
   width: 60%;
